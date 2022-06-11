@@ -1,4 +1,3 @@
-import Link from 'next/link'
 import classNames from 'classnames'
 
 import type { FunctionComponent, MouseEventHandler, ReactNode } from 'react'
@@ -19,12 +18,13 @@ export const SocialButton: FunctionComponent<Props> = ({
     onClick
 }) => {
     const classes = classNames(
-        'w-14 h-14',
+        'w-12 h-12',
         'flex items-center justify-center',
         'rounded-full',
-        'text-white text-2xl',
+        'text-white',
         'cursor-pointer select-none',
         'hover:bg-white hover:text-gray-900',
+        success && 'p-4',
         success && 'bg-green-500',
         success && 'text-white',
         success && 'pointer-events-none'
@@ -32,14 +32,16 @@ export const SocialButton: FunctionComponent<Props> = ({
 
     const button = (
         <div className={classes} onClick={onClick}>
-            {icon}
+            <div className="w-8 h-8 flex items-center justify-center">
+                {icon}
+            </div>
         </div>
     )
 
     return href ? (
-        <Link href={href} target={target}>
-            <a>{button}</a>
-        </Link>
+        <a href={href} target={target}>
+            {button}
+        </a>
     ) : (
         button
     )
