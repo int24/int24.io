@@ -1,0 +1,6 @@
+dist
+
+.next
+.vercel
+
+*.md
