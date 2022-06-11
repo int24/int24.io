@@ -24,28 +24,27 @@ export const HomePage: FunctionComponent = () => {
 
     return (
         <div className="absolute inset-0 flex items-center justify-center">
-            <div className="flex flex-col items-center justify-center">
-                <h1 className="font-bold text-center text-6xl text-green-500 select-none">
+            <div className="flex flex-col items-center justify-center mx-4">
+                <h1 className="font-bold text-center text-4xl sm:text-6xl text-green-500 leading-none select-none">
                     braden lamb
                 </h1>
-                <p className="mt-2 font-normal text-center text-lg text-white text-opacity-80 select-none">
-                    building distributed, real-time systems
-                    <br />
-                    and multiplayer games
+                <p className="mt-6 font-normal text-center text-lg text-white text-opacity-80 leading-none select-none">
+                    building distributed, real-time systems and multiplayer
+                    games
                 </p>
-                <div className="flex items-center justify-center mt-4 space-x-4">
+                <div className="flex items-center justify-center mt-6 space-x-8">
                     <SocialButton
-                        icon={<FontAwesomeIcon icon={discordIcon} />}
+                        icon={discordIcon}
                         success={copiedDiscord}
                         onClick={copyDiscord}
                     />
                     <SocialButton
-                        icon={<FontAwesomeIcon icon={faGithub} />}
+                        icon={faGithub}
                         href={GITHUB_LINK}
                         target="_blank"
                     />
                     <SocialButton
-                        icon={<FontAwesomeIcon icon={faEnvelope} />}
+                        icon={faEnvelope}
                         href={EMAIL_LINK}
                         target="_blank"
                     />

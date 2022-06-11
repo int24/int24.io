@@ -1,9 +1,11 @@
 import classNames from 'classnames'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
-import type { FunctionComponent, MouseEventHandler, ReactNode } from 'react'
+import type { FunctionComponent, MouseEventHandler } from 'react'
+import type { IconDefinition } from '@fortawesome/fontawesome-svg-core'
 
 interface Props {
-    icon: ReactNode
+    icon: IconDefinition
     success?: boolean
     href?: string
     target?: string
@@ -17,24 +19,19 @@ export const SocialButton: FunctionComponent<Props> = ({
     target,
     onClick
 }) => {
-    const classes = classNames(
-        'w-12 h-12',
+    const wrapperClasses = classNames(
         'flex items-center justify-center',
         'rounded-full',
-        'text-white',
         'cursor-pointer select-none',
-        'hover:bg-white hover:text-gray-900',
-        success && 'p-4',
-        success && 'bg-green-500',
-        success && 'text-white',
+        'hover:text-white',
+        !success && 'text-white text-opacity-80',
+        success && 'text-green-500',
         success && 'pointer-events-none'
     )
 
     const button = (
-        <div className={classes} onClick={onClick}>
-            <div className="w-8 h-8 flex items-center justify-center">
-                {icon}
-            </div>
+        <div className={wrapperClasses} onClick={onClick}>
+            <FontAwesomeIcon icon={icon} className="w-6 h-6" />
         </div>
     )
 
