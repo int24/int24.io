@@ -1,0 +1,9 @@
+body {
+    @apply m-0;
+
+    @apply bg-gray-900;
+}
+
+* {
+    @apply box-border;
+}
