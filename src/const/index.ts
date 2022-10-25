@@ -1,5 +1,5 @@
-export const DISCORD_USERNAME = 'integral#0001'
+export const DISCORD_USERNAME = 'retro#6666'
 
-export const GITHUB_LINK = 'https://github.com/int24'
+export const GITHUB_LINK = 'https://github.com/retroscepter'
 
-export const EMAIL_LINK = 'mailto:braden@int24.io'
+export const EMAIL_LINK = 'mailto:braden@retroscepter.io'

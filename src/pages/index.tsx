@@ -7,7 +7,7 @@ import type { NextPage } from 'next'
 const PAGE_TITLE = 'braden lamb'
 const PAGE_DESC =
     'braden lamb: building distributed, real-time systems and multiplayer games'
-const PAGE_URL = 'https://int24.io'
+const PAGE_URL = 'https://retroscepter.com'
 const ICON_URL = '/favicon.png'
 
 const Home: NextPage = () => {
