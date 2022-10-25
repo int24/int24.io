@@ -1,6 +1,6 @@
-# int24.io
+# retroscepter.com
 
-My personal website, [int24.io](https://int24.io).
+My personal website, [retroscepter.com](https://retroscepter.com).
 
 ## Tech
 
